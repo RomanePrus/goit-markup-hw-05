@@ -27,12 +27,14 @@
           </a>
           <ul class="nav list">
             <li class="item">
-              <a href="index.html" class="link">Студия</a>
+              <a href="/index.html" class="selected link">Студия</a>
             </li>
             <li class="item">
-              <a href="portfolio.html" class="link">Портфолио</a>
+              <a href="/portfolio.html" class="link">Портфолио</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="item">
+              <a href="" class="link">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="contacts list">
@@ -71,7 +73,9 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--Блок Особенности -->
@@ -466,6 +470,15 @@
         </ul>
       </div>
     </section>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="btn-icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <!--======================Футер=============================-->
     <footer class="footer">
